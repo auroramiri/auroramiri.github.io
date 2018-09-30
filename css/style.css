@@ -5,6 +5,9 @@ html,body,header, #intro {
     background: url(../Images/prewdoit.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     background-size: cover;
+    width: 100%;
+    max-width: 1315px;
+    margin: 0 auto;
 }
 .top-nav-collapse{
     background-color: black;
@@ -26,4 +29,14 @@ html,body,header, #intro {
   
   .flex-box #desc {
     flex: 1 1 50%;
+  }
+  
+  div.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto; /* центрируем основной контейнер */
+  }
+  img {
+    width: 100%; /* ширина картинки */
+    height: auto; /* высота картинки */
   }
