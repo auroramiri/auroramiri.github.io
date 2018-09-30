@@ -15,6 +15,7 @@
   <link href="css/mdb.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -114,6 +115,50 @@
             <hr class="my-5">
             <section id="video" class="text-center">
               <h2 class="mb-5 font-weight-bold">Video</h2>
+              
+              <div class="container-fluid"> 
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+              
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner z-depth-1-half" role="listbox">
+                        <div class="carousel-item active">
+                          <video class="d-block " width="100%" height="100%" controls="controls" controls poster="Images/prewdoit.jpg" src="Video/Wildways - D.O.I.T. (Music Video).mp4">
+                  </video>
+                        </div>
+              
+                        <div class="carousel-item">
+                         <video class="d-block w-100" controls="controls" controls poster="Images/prewdontgo.jpg" src="Video/Wildways - Don't Go (Music Video).mp4">
+                  </video>
+                        </div>
+                        <div class="carousel-item">
+                          <video class="d-block w-100" controls="controls" controls poster="Images/prewbreathless.jpg" src="Video/Wildways - Breathless (Music Video).mp4">
+                  </video>
+                        </div>
+                      </div>
+              
+                      
+                  </div> <a href="#myCarousel" class="carousel-control-prev position:absolute; top:50%" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>
+                      <a href="#myCarousel" class="carousel-control-next position:absolute; top:50%" role="button" data-slide="next" >
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                  </div>
+                  <!--<div class="carousel-control left"><a data-slide="prev" href="#myCarousel" style="text-decoration:none; color:#fff; font-size:40px;  position:absolute; top:50%;">&lsaquo;</a></div>
+            <div class="carousel-control right"><a data-slide="next" href="#myCarousel" style="text-decoration:none; color:#fff; font-size:40px; position:absolute; top:50%">&rsaquo;</a></div>-->
+        
+                </div>
+              </div>
+              
+
             </section>
             <hr class="my-5">
             <section id="gallery">

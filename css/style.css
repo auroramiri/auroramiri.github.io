@@ -2,7 +2,7 @@ html,body,header, #intro {
     height: 100%
 }
 #intro{
-    background: url(../Images/maxresdefault.jpg) no-repeat center fixed;
+    background: url(../Images/prewdoit.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -15,3 +15,15 @@ html,body,header, #intro {
         background: black;
     }
 }
+.flex-box {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .flex-box #myCarousel{
+    flex: 1 1 50%
+  }
+  
+  .flex-box #desc {
+    flex: 1 1 50%;
+  }
