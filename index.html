@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+ <!-- <div id="page-preloader" style="display: none;"><div class="spinner" style="display: none;"></div></div>-->
         <header>
           <nav class=" fixed-top scrolling-navbar navbar-dark navbar navbar-expand-lg ">
               <div class="container">
@@ -37,13 +37,13 @@
                           <a href="#members" class="nav-link waves-effect waves-light white-text">Участники</a>
                         </li>
                         <li class="nav-item">
-                          <a href="#history" class="nav-link waves-effect waves-light white-text">История</a>
+                          <a href="#video" class="nav-link waves-effect waves-light white-text">Видео</a>
                         </li>
                         <li class="nav-item">
                           <a href="#music" class="nav-link waves-effect waves-light white-text">Музыка</a>
                         </li>
                         <li class="nav-item">
-                          <a href="#photoarchive" class="nav-link waves-effect waves-light white-text">Фотоархив</a>
+                          <a href="#photoarchive" class="nav-link waves-effect waves-light white-text">Фото</a>
                         </li>
                       </ul>
 
@@ -110,7 +110,7 @@
             </section>
             <hr class="my-5">
             <section id="video" class="text-center">
-              <h2 class="mb-5 font-weight-bold">Video</h2>
+              <h2 class="mb-5 font-weight-bold">Bидео</h2>
               
               <div class="container-fluid"> 
                 <div class="row">
@@ -128,15 +128,21 @@
                         <div class="carousel-item active">
                           <video class="d-block " width="100%" height="100%" controls="controls" controls poster="Images/prewdoit.jpg" src="Video/Wildways - D.O.I.T. (Music Video).mp4">
                   </video>
+                  <br>
+                  <span class="font-weight-bold font-size: 100%">D.O.I.T</span>
                         </div>
               
                         <div class="carousel-item">
                          <video class="d-block w-100" controls="controls" controls poster="Images/prewdontgo.jpg" src="Video/Wildways - Don't Go (Music Video).mp4">
                   </video>
+                  <br>
+                  <span class="font-weight-bold">Don't Go</span>
                         </div>
                         <div class="carousel-item">
                           <video class="d-block w-100" controls="controls" controls poster="Images/prewbreathless.jpg" src="Video/Wildways - Breathless (Music Video).mp4">
                   </video>
+                  <br>
+                  <span class="font-weight-bold">Breathless</span>
                         </div>
                       </div>
               
@@ -152,7 +158,7 @@
                 </div>
               </div>
               <br>
-              <a href="#video" class="btn btn-primary btn-md waves-effect waves-light">Все видео</a>
+              <a href="#video" class="btn btn-dark btn-md waves-effect waves-light">Все видео</a>
               
 
             </section>
@@ -202,7 +208,7 @@
                   </p>
                   
                   <p>by <a> <strong>John Doe</strong></a>, 29/09/2018</p>
-                  <a href="#photoarchive" class="btn btn-primary btn-md waves-effect waves-light">Галерея</a>
+                  <a href="#photoarchive" class="btn btn-dark btn-md waves-effect waves-light">Галерея</a>
                 </div>
               </div>
             </section>
@@ -239,7 +245,7 @@
                             </div>
                             
                             <div class="text-center mt-4">
-                              <button class="btn btn-primary waves-effect waves-light">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                              <button class="btn btn-dark waves-effect waves-light">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
                             </div>
                     </form>
                   </div>
@@ -265,6 +271,23 @@
           </div>
         </main>
 
+        <footer class="page-footer font-small color-grey pt-0">
+          <div class="bg-dark">
+            <div class="container">
+              <div class="row py-4 d-flex align-items-center">
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                  <h6 class="mb-0 white-text">Lorem ipsum dolor sit amet.</h6>
+                </div>
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                  <a href="#" class="fb-ic ml-0">
+                    <i class="fa fa-facebook white-text mr-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div id="return-to-top"><i class="fa fa-chevron-circle-up"></i></div>
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
@@ -276,26 +299,9 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.js"></script>
   <!--Google Maps-->
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDYUAl86lPV8w5hj5pRHWD5PbKsDkhvQhw"></script>
 <script>
 // Regular map
-function regular_map() {
-var var_location = new google.maps.LatLng(53.891563,27.559841);
-
-var var_mapoptions = {
-center: var_location,
-zoom: 14
-};
-
-var var_map = new google.maps.Map(document.getElementById("map-container"),
-var_mapoptions);
-
-var var_marker = new google.maps.Marker({
-position: var_location,
-map: var_map,
-title: "New York"
-});
-}
 
 // Initialize maps
 google.maps.event.addDomListener(window, 'load', regular_map);</script>

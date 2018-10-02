@@ -3942,3 +3942,121 @@
 
 })));
 //# sourceMappingURL=bootstrap.js.map
+
+/*$(window).on('load', function () {
+  var $preloader = $('#page-preloader'),
+      $spinner   = $preloader.find('.spinner'),
+      $h1        = $('h1'),
+      $body      = $(document.body);
+  $spinner.fadeOut('slow');
+  $preloader.delay(350).fadeOut('slow');
+  $h1.addClass('slideInFromUp');
+  $body.addClass('loaded').delay(1000);
+
+});*/
+
+$('#return-to-top').click(function() {
+  $('body,html').animate({
+      scrollTop : 0
+  }, 500);
+});
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 550) {
+      $('#return-to-top').fadeIn(200);
+  } else {
+      $('#return-to-top').fadeOut(200);
+  }
+
+  if ($(this).scrollTop() >= 100) {
+    $('nav').addClass('is-showready');
+  } else {
+    $('nav').removeClass('is-showready');
+  }
+
+  if ($(this).scrollTop() >= 500) {
+    $('nav').addClass('is-fixed');
+  } else {
+    $('nav').removeClass('is-fixed');
+  }
+});
+
+/*Tour map*/
+
+function regular_map() {
+
+  var republic = {lat: 53.907808, lng: 27.458687};
+  var ivanovocherdak = new google.maps.LatLng(57.010385,40.957205);
+  var djaoda = new google.maps.LatLng(57.624167,39.889997);
+  var fstmetall = new google.maps.LatLng(59.123301,37.869733);
+  var musicbox = new google.maps.LatLng(56.835913,35.902730);
+  var atlas = new google.maps.LatLng(50.456105,30.496880);
+  var chasy = new google.maps.LatLng(50.613045,36.577609);
+  var soda = new google.maps.LatLng(52.604461,39.577982);
+  
+  var var_mapoptions = {
+  center: republic,
+  zoom: 4
+  };
+  
+  var var_map = new google.maps.Map(document.getElementById("map-container"),
+  var_mapoptions);
+  
+  
+  var var_marker = new google.maps.Marker({
+  position: republic,
+  map: var_map,
+  title: "Pe:Паблик",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: ivanovocherdak,
+  map: var_map,
+  title: "Чердак",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: djaoda,
+  map: var_map,
+  title: "Джао Да",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: fstmetall,
+  map: var_map,
+  title: "Первый Металлист",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: musicbox,
+  map: var_map,
+  title: "Music Box",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: atlas,
+  map: var_map,
+  title: "Atlas",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: chasy,
+  map: var_map,
+  title: "Часы",
+  animation: google.maps.Animation.DROP
+  });
+  
+  var var_marker = new google.maps.Marker({
+  position: soda,
+  map: var_map,
+  title: "Soda",
+  animation: google.maps.Animation.DROP
+  });
+  }
+  

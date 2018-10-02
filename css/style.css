@@ -6,7 +6,7 @@ html,body,header, #intro {
     -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
-    max-width: 1315px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .top-nav-collapse{
@@ -39,4 +39,114 @@ html,body,header, #intro {
   img {
     width: 100%; /* ширина картинки */
     height: auto; /* высота картинки */
+  }
+
+  /*#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+  }*/
+  
+  /*#page-preloader .spinner {
+    background: url("../Images/wildways-og.png") no-repeat 50% 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: beat 1.2s infinite ease-in-out;
+    
+  }*//* left: 50%; */
+    /* top: 50%; */
+    /* margin: -16px 0 0 -16px; */
+
+  #return-to-top {
+    width: 40px;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    z-index: 8;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 5px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  #return-to-top:hover {
+    color: #e6d07d;
+    cursor: pointer;
+  }
+  
+  #return-to-top:hover i:hover {
+    -webkit-animation-name: go_top_button;
+    animation-name: go_top_button;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  
+  #return-to-top i {
+    font-size: 31px;
+    padding: 6px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  @keyframes go_top_button {
+    16.65% {
+      transform: translateY(6px);
+      -moz-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      -webkit-transform: translateY(6px);
+      -o-transform: translateY(6px);
+    }
+    33.3% {
+      transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+    }
+    49.95% {
+      transform: translateY(4px);
+      -moz-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      -webkit-transform: translateY(4px);
+      -o-transform: translateY(4px);
+    }
+    66.6% {
+      transform: translateY(-2px);
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -webkit-transform: translateY(-2px);
+      -o-transform: translateY(-2px);
+    }
+    83.25% {
+      transform: translateY(1px);
+      -moz-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      -webkit-transform: translateY(1px);
+      -o-transform: translateY(1px);
+    }
+    100% {
+      transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -o-transform: translateY(0);
+    }
   }
