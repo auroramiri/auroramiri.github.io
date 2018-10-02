@@ -150,3 +150,24 @@ html,body,header, #intro {
       -o-transform: translateY(0);
     }
   }
+
+  footer .sponsores {
+    margin: 0;
+  }
+  
+  footer .sponsores li {
+    display: inline-block;
+  }
+  
+  footer .sponsores li img {
+    margin: 0 15px 0 0;
+  }
+  
+  footer .sponsores a {
+    transition: 0.24s all;
+  }
+  
+  footer .sponsores a:hover {
+    opacity: 0.7;
+    transition: 0.24s all;
+  }
