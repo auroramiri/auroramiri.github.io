@@ -1,6 +1,11 @@
 html,body,header, #intro {
     height: 100%
 }
+
+#headerheight{
+  height: 20%;
+}
+
 #intro{
     background: url(../Images/prewdoit.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
@@ -169,5 +174,82 @@ html,body,header, #intro {
   
   footer .sponsores a:hover {
     opacity: 0.7;
+    transition: 0.24s all;
+  }
+
+  .pagefoto{
+    background: url(../Images/bg-photo.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .card {
+    height: 300px;
+  }
+  
+  .card-link {
+    position: absolute;
+    z-index: 1;
+  }
+  .card-title{
+    z-index: 2;
+  }
+
+  .card .card-title {
+    position: relative;
+    font-size: 1.4rem;
+    padding: 15px;
+    font-size: 1.2rem;
+    padding: 10px !important;
+  }
+
+  .card:hover .card-title {
+    transform: translateY(-15%);
+    -webkit-transition: 0.24s all;
+    -o-transition: 0.24s all;
+    -moz-transition: 0.24s all;
+    transition: 0.24s all;
+    
+  }
+
+  .card .card-title {
+    font-size: 22px;
+    -webkit-transition: 0.24s all;
+    -o-transition: 0.24s all;
+    -moz-transition: 0.24s all;
+    transition: 0.24s all;
+  }
+
+
+  .card:hover .card-img:after {
+    opacity: 1;
+  }
+  
+  
+  
+  .card-img:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.24s all;
+    -o-transition: 0.24s all;
+    -moz-transition: 0.24s all;
+    transition: 0.24s all;
+    z-index: 1;
+  }
+
+  .card:hover .card-title {
+    transform: translateY(-15%);
+    -webkit-transition: 0.24s all;
+    -o-transition: 0.24s all;
+    -moz-transition: 0.24s all;
     transition: 0.24s all;
   }
