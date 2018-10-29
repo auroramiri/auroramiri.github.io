@@ -3941,19 +3941,7 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=bootstrap.js.map
 
-/*$(window).on('load', function () {
-  var $preloader = $('#page-preloader'),
-      $spinner   = $preloader.find('.spinner'),
-      $h1        = $('h1'),
-      $body      = $(document.body);
-  $spinner.fadeOut('slow');
-  $preloader.delay(350).fadeOut('slow');
-  $h1.addClass('slideInFromUp');
-  $body.addClass('loaded').delay(1000);
-
-});*/
 
 $('#return-to-top').click(function() {
   $('body,html').animate({
@@ -4059,4 +4047,4 @@ function regular_map() {
   animation: google.maps.Animation.DROP
   });
   }
-  
+
