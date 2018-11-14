@@ -304,3 +304,21 @@ html,body,header, #intro {
     font-size: 300%;
   }
   
+  .videogallery{
+    margin-left: 12%;
+  }
+
+  .active-menu{
+    background-color: #e6d07d;
+  }
+
+  .pagevideo{
+    background: url(../Images/bandscene.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /*Preloader*/
