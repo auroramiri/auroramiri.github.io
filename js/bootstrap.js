@@ -4047,5 +4047,3 @@ function regular_map() {
   animation: google.maps.Animation.DROP
   });
   }
-
-  
