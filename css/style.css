@@ -358,14 +358,10 @@ html,body,header, #intro {
     display: inline-block;
     max-width: 120px;  /* максимальная ширина миниатюр */
     width: 25%;  /* ширина миниатюр */
-    border: 1px solid blue;  /* рамка вокруг миниатюр */
     opacity: .7;  
     text-decoration: none;
   }
-  .carousel-video a:visited,
-  .carousel-video a:nth-of-type(1) {
-    border-color: #555;  /* рамка вокруг миниатюр просмотренных видео */
-  }
+
   .carousel-video a:hover { 
     opacity: 1;
   }
@@ -409,4 +405,51 @@ html,body,header, #intro {
     z-index: 999999;
     background: url(../gif.gif) center no-repeat black;
     text-align: center;
+}
+/**/
+
+.video-cont{
+  margin: auto;
+}
+
+.pagemusic{
+  background: url(../Images/music.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.separator {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.separator > span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+.separator > span:before,
+.separator > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #e6d07d;
+}
+
+.separator > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.separator > span:after {
+  left: 100%;
+  margin-left: 15px;
 }
