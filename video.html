@@ -20,6 +20,7 @@
 </head>
 
 <body class="pagevideo">
+        <div class="preloader"></div>
         <header id="headerheight">
           <nav class="fixed-top scrolling-navbar navbar-dark navbar navbar-expand-lg top-nav-collapse">
               <div class="container">
@@ -33,9 +34,6 @@
 
                   <div class="collapse navbar-collapse" id="basicExampleNav">
                       <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item">
-                          <a href="#members" class="nav-link waves-effect waves-light white-text">Участники</a>
-                        </li>
                         <li class="nav-item active-menu">
                                 <a href="video.html" class="nav-link waves-effect waves-light white-text">Видео</a>
                         </li>
@@ -93,12 +91,12 @@
                             
                             <div class="col-lg-6 col-md-12">
                                     <div class="image text-white">
-                                            <a href="2kxxvideo.html" class="image-link">
+                                            <a href="dayx.html" class="image-link">
                                            <div class="image-img">
                                              <img src="pagevideo/dayx.jpg">
                                             </div>
                                         <div class="image-img-overlay">
-                                           <a href="2kxxvideo.html"> <span class="image-title white-text">Day X</span></a>
+                                           <a href="dayx.html"> <span class="image-title white-text">Day X</span></a>
                                         </div></a>
                                     </div>
                                 </div>
@@ -107,15 +105,26 @@
                     <div class="row">
                             <div class="col-lg-6 col-md-12">
                                     <div class="image text-white">
-                                            <a href="#singles.html" class="image-link">
+                                            <a href="singles.html" class="image-link">
                                            <div class="image-img">
                                              <img src="pagevideo/singles.jpg">
                                             </div>
                                         <div class="image-img-overlay">
-                                           <a href="#singles.html"> <span class="image-title white-text">Singles</span></a>
+                                           <a href="singles.html"> <span class="image-title white-text">Singles</span></a>
                                         </div></a>
                                     </div>
                                 </div>
+                                <div class="col-lg-6 col-md-12">
+                                        <div class="image text-white">
+                                                <a href="live.html" class="image-link">
+                                               <div class="image-img">
+                                                 <img src="pagevideo/live.jpg">
+                                                </div>
+                                            <div class="image-img-overlay">
+                                               <a href="live.html"> <span class="image-title white-text">Live</span></a>
+                                            </div></a>
+                                        </div>
+                                    </div>
                     </div> 
                     <br>
                 </div>
@@ -147,7 +156,16 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+</script> 
+<script>jQuery(document).ready(function($) {
+  $(window).load(function() {
+    setTimeout(function() {
+      $('.preloader').fadeOut('slow', function() {});
+    }, 2000);
+ 
+  });
+});</script> 
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->

@@ -321,14 +321,17 @@ html,body,header, #intro {
     margin: 0 auto;
   }
   
+  #container{
+    text-align: center;
+    margin: 0 auto 0 auto;;
+  }
+
   .carousel-video {
     padding: .3em .3em 0;
     background: rgb(0,0,0);
     text-align: center;
-    max-height: 900px;
   }
   .carousel-video div {
-    max-height: 900px;
     position: relative;
     margin-bottom: .3em;
     padding-top: 56.25%;
@@ -396,3 +399,14 @@ html,body,header, #intro {
   }
   
   /*Preloader*/
+
+  .preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url(../gif.gif) center no-repeat black;
+    text-align: center;
+}

@@ -26,6 +26,7 @@
 </head>
 
 <body class="pagefoto">
+    <div class="preloader"></div>
         <header id="headerheight">
           <nav class="fixed-top scrolling-navbar navbar-dark navbar navbar-expand-lg top-nav-collapse">
               <div class="container">
@@ -39,9 +40,6 @@
 
                   <div class="collapse navbar-collapse" id="basicExampleNav">
                       <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item">
-                          <a href="#members" class="nav-link waves-effect waves-light white-text">Участники</a>
-                        </li>
                         <li class="nav-item">
                           <a href="video.html" class="nav-link waves-effect waves-light white-text">Видео</a>
                         </li>
@@ -157,9 +155,17 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/functions_gallery.js"></script>
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+</script> 
+<script>jQuery(document).ready(function($) {
+  $(window).load(function() {
+    setTimeout(function() {
+      $('.preloader').fadeOut('slow', function() {});
+    }, 2000);
+ 
+  });
+});</script> 
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
