@@ -1,0 +1,47 @@
+MAIN
+{  display:block;
+margin:50px 300px;
+}
+
+INFA
+{  display:block;
+text-align:center;
+margin:10px 100px 50px 100px;
+margin-top:50px;
+font-size:20pt;
+}
+
+THEME
+
+{  font-style:oblique;
+font-weight:bold;
+text-align:center;
+display:block;
+}
+
+FIO
+{  font-style:oblique;
+font-weight:bold;
+text-align:center;
+border-top:solid;
+}
+
+GROUP
+{  display:block;
+text-align:center;
+border-top:solid;
+}
+
+WORK
+{  display:block;
+text-align:center;
+border-top:solid;
+}
+
+YEAR
+{  display:block;
+text-align:center;
+border-top:solid;
+border-top-color: black;
+font-weight:bold;
+}
